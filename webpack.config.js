@@ -2,7 +2,9 @@ var path = require('path');
 
 module.exports = {
   entry: {
-    step1: './js/step1/index.js'
+    step1: './js/step1/index.js',
+    step2: './js/step2/index.js',
+    step3: './js/step3/index.js'
   },
   output: {
     filename: '[name].bundle.js',
