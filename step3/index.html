@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>A-Frame VR simulation - Step 3</title>
+  <script src="../vendor/aframe.min.js"></script>
+  <script src="../vendor/aframe-physics-system.min.js"></script>
+  <script src="../dist/step3.bundle.js"></script>
+</head>
+<body>
+    <a-scene light="defaultLightsEnabled: false"
+             physics="debug: true"
+             operator="hands: [vive-controls];
+                       items: #circuitboard,[tool];">
+      <!-- World -->
+      <a-sky color="#333"></a-sky>
+      <a-plane rotation="-90 0 0"
+               static-body
+               width="15" height="15" color="#777">
+      </a-plane>
+
+      <!-- Workspace -->
+      <a-entity id="workspace" position="0 0.80 -0.8">
+        <a-box id="workbench" position="0 0 0"
+               static-body
+               width="2" depth="1" height="0.04" color="#97b7d5">
+        </a-box>
+        <a-box id="circuitboard" position="0 0.0215 0.4"
+               dynamic-body="mass: 0.01"
+               width="0.05" depth="0.05" height="0.003" color="#008000">
+          <a-box id="chip" position="0 0.002 0.005"
+                 width="0.02" depth="0.02" height="0.001" color="#000">
+          </a-box>
+        </a-box>
+        <a-cylinder id="suction-pad"
+                    tool="position: 0 -0.04 -0.035; rotation: -90 0 0"
+                    position="-0.2 0.025 0.286" rotation="-90 0 0"
+                    height="0.1" radius="0.005" color="red">
+        </a-cylinder>
+        <a-cylinder id="hot-air-gun"
+                    tool="position: 0 0 0.1; rotation: -90 0 0"
+                    position="0.3 0.03 0.286" rotation="-90 0 0"
+                    height="0.15" radius="0.01" color="blue">
+        </a-cylinder>
+      </a-entity>
+
+      <!-- Operator -->
+      <a-camera position="0 0 0" user-height="1.3"></a-camera>
+      <a-entity id="left-hand"
+                operator-hand
+                static-body="shape: box"
+                vive-controls="hand: left">
+      </a-entity>
+      <a-entity id="right-hand"
+                operator-hand
+                static-body="shape: box"
+                vive-controls="hand: right">
+      </a-entity>
+    </a-scene>
+</body>
+</html>
