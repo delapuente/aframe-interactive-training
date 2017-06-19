@@ -15,10 +15,10 @@ Issuing the following command will run a local server with live-reload listening
 $ npm start
 ```
 
-Visit `localhost:8080` to choose a step. Currently, the step 3 is the most advanced version of this demo and it allows you grabbing the scene elements by pressing the grip buttons of your HTC Vive HMD.
+Visit `localhost:8080` to choose a step. Currently, the step 3 is the most advanced version of this demo and it allows you grabbing the scene elements by pressing the grip buttons of the HTC Vive remotes.
 
 ### Working with Oculus (not verified)
-Look at the scenes declared in the `index.html` files of `step2/` or `step3` folders. Replace occurrences of `vive-controls` with `oculus-touch-controls` and you're done.
+Look at the scenes declared in the `index.html` files of `step2/` or `step3/` folders. Replace occurrences of `vive-controls` with `oculus-touch-controls` and you're done.
 
 ## Build
 If you simply want to generate the JavaScript bundle for your demo, run the following command and the library will be under the `dist` folder:
