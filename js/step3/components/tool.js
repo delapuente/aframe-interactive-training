@@ -1,7 +1,8 @@
+import * as AFRAME from 'aframe';
 const Component = AFRAME.registerComponent('tool', {
   schema: {
-    position: { type: 'vec3', default: '0 0 0' },
-    rotation: { type: 'vec3', default: '0 0 0' }
+    position: { type: 'vec3' },
+    rotation: { type: 'vec3' }
   },
   init() {
     this.el._tool = this.el._tool || {};

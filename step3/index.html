@@ -3,13 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <title>A-Frame VR simulation - Step 3</title>
-  <script src="../vendor/aframe.min.js"></script>
-  <script src="../vendor/aframe-physics-system.min.js"></script>
   <script src="../dist/step3.bundle.js"></script>
 </head>
 <body>
-    <a-scene light="defaultLightsEnabled: false"
-             physics="debug: true"
+    <a-scene physics="debug: true"
              operator="hands: [vive-controls];
                        items: #circuitboard,[tool];">
       <!-- World -->
@@ -20,7 +17,7 @@
       </a-plane>
 
       <!-- Workspace -->
-      <a-entity id="workspace" position="0 0.80 -0.8">
+      <a-entity id="workspace" position="0 0.80 -0.95">
         <a-box id="workbench" position="0 0 0"
                static-body
                width="2" depth="1" height="0.04" color="#97b7d5">
@@ -47,13 +44,11 @@
       <!-- Operator -->
       <a-camera position="0 0 0" user-height="1.3"></a-camera>
       <a-entity id="left-hand"
-                operator-hand
-                static-body="shape: box"
+                reset-static-body
                 vive-controls="hand: left">
       </a-entity>
       <a-entity id="right-hand"
-                operator-hand
-                static-body="shape: box"
+                reset-static-body
                 vive-controls="hand: right">
       </a-entity>
     </a-scene>

@@ -1,3 +1,4 @@
+import 'aframe';
 const System = AFRAME.registerSystem('operator', {
   schema: {
     hands: { type: 'selectorAll' },

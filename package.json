@@ -1,7 +1,7 @@
 {
-  "name": "aframe-simulation-demo",
+  "name": "aframe-interactive-training",
   "version": "1.0.0",
-  "description": "A-Frame VR simulation of separating a chip from a circuit board.",
+  "description": "Hand-based interactive training experience made with A-Frame",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
@@ -16,9 +16,12 @@
   "keywords": [
     "aframevr",
     "vr",
-    "skeleton",
-    "template",
-    "boilerplate"
+    "training",
+    "simulation",
+    "hand",
+    "interactive",
+    "physics",
+    "soldering"
   ],
   "author": "Salvador de la Puente <salva@unoyunodiez.com>",
   "license": "MPL-2.0",
@@ -32,9 +35,12 @@
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
   },
-  "dependencies": {},
+  "dependencies": {
+    "aframe": "^0.6.1",
+    "aframe-physics-system": "^1.4.2"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/delapuente/aframe-spa-skeleton.git"
+    "url": "https://github.com/delapuente/aframe-interactive-training.git"
   }
 }
