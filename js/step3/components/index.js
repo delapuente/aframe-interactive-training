@@ -1,2 +1,2 @@
 import './tool';
-import './reset-static-body';
+import './delayed-static-body';
