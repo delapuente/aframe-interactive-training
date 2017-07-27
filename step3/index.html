@@ -44,11 +44,11 @@
       <!-- Operator -->
       <a-camera position="0 0 0" user-height="1.3"></a-camera>
       <a-entity id="left-hand"
-                reset-static-body
+                delayed-static-body="shape: box"
                 vive-controls="hand: left">
       </a-entity>
       <a-entity id="right-hand"
-                reset-static-body
+                delayed-static-body="shape: box"
                 vive-controls="hand: right">
       </a-entity>
     </a-scene>
