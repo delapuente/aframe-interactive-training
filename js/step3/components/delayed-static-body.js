@@ -1,7 +1,7 @@
 import * as AFRAME from 'aframe';
 import * as physics from 'aframe-physics-system';
 const Component = AFRAME.registerComponent('delayed-static-body', {
-  schema: physics['static-body'].schema,
+  schema: AFRAME.components['static-body'].schema,
   init() {
     this.el.addEventListener('model-loaded', () => {
       window.requestAnimationFrame(this._resetBoundingBox.bind(this));
