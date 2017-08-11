@@ -1,6 +1,8 @@
 # A-Frame Interactive Training
 > Hand-based interactive training experience made with A-Frame
 
+[Try online](https://delapuente.github.io/aframe-interactive-training)!
+
 ## Install
 You will need `node` and `npm` installed in your system. Once installed, simply run the following command from the root of the project:
 
