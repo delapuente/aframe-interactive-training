@@ -9,6 +9,11 @@
     <a-scene physics="debug: true"
              operator="hands: [vive-controls];
                        items: #circuitboard,[tool];">
+
+      <a-plane color="black" position="0 1.2 -1" height="0.15"
+               text="value: Grab &amp; drop is implemented. Hold the grip buttons while near the tools and the circuit board to grab them.">
+      </a-plane>
+
       <!-- World -->
       <a-sky color="#333"></a-sky>
       <a-plane rotation="-90 0 0"
